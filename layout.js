@@ -8,8 +8,8 @@ isMobile = function() {
 docHeight = document.getElementById('map').offsetHeight
 docWidth = document.getElementById('map').offsetWidth
 
-if (isMobile) {
-    desiredZoom = Math.log2(Math.max(docWidth, docHeight*1.3)/256)
+if (isMobile()) {
+  desiredZoom = Math.log2(Math.max(docWidth, docHeight*1.3)/256)
 } else {
 	desiredZoom = Math.log2(Math.min(docWidth, docHeight*1.75)/256)
 }

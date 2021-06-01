@@ -79,7 +79,7 @@ const contextualSearchSettings = function(fullURL) {
     return {
         // "async": false,
         "timeout": 10000,
-        "error": function(jqXHR, textStatus, errorThrown) {alert("Error! " + textStatus)},
+        "error": function(jqXHR, textStatus, errorThrown) {alert("Error! Failed to load search results: <br\>" + errorThrown)},
         "crossDomain": true,
         "url": fullURL,
         "method": "GET",
@@ -106,11 +106,16 @@ parseContextualResults = function(contextualResultsObject) {
         for (i = 0; i < nItems; i++) {
             item = contextualResultsObject.value[i]
             mainText += "<span class='popupBold'>" + "<li><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.title + "</a></span>" +
-                        "<span class='popupText'>" + "<br/><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.description + "</a><br/>"
+                        "<span class='popupText'>" + "<br/><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.description + "</a>"
             if (isMobile()) {
-                mainText += "<br/>"
+                if (i < nItems - 1) {
+                    mainText += "<br/><br/>"
+                }
             } else {
-                mainText += "<span class='popupLink'><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.url + "</a></span><br/><br/>"
+                mainText += "<br/><span class='popupLink'><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.url + "</a></span>"
+                if (i < nItems - 1) {
+                    mainText += "<br/><br/>"
+                }
             }
         }
         mainText += '</ol>'
