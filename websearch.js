@@ -79,7 +79,7 @@ const contextualSearchSettings = function(fullURL) {
     return {
         // "async": false,
         "timeout": 10000,
-        "error": function(jqXHR, textStatus, errorThrown) {alert("Error! Failed to load search results: <br\>" + errorThrown)},
+        "error": function(jqXHR, textStatus, errorThrown) {alert("Error! Failed to load search results: " + errorThrown)},
         "crossDomain": true,
         "url": fullURL,
         "method": "GET",
@@ -112,9 +112,9 @@ parseContextualResults = function(contextualResultsObject) {
                     mainText += "<br/><br/>"
                 }
             } else {
-                mainText += "<br/><span class='popupLink'><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.url + "</a></span>"
+                mainText += "<br/><span class='popupLink'><a id='popupAnchor' href=" + item.url + " target='_blank'>" + item.url + "</a></span><br\>"
                 if (i < nItems - 1) {
-                    mainText += "<br/><br/>"
+                    mainText += "<br/>"
                 }
             }
         }
