@@ -10,6 +10,8 @@ Although news sources abound, there is no centralized resource to get a broad or
 
 ## What am I?
 
+**In the World** attempts to democratize knowledge of current events by reducing the barrier to entry. It's kind of the 2021 equivalent of collecting a bunch of news papers from around the world, cutting out the most relevant articles, and sorting them for you at the blink of an eye.
+
 **In the World** allows you to ask the whole world the same question at once, and discover each country's answer at the click of a button. Results are links, so you can simply click them to read more.
 
 ![In the World screen shot](https://github.com/aarongerston/in_the_world/blob/main/example.png)
