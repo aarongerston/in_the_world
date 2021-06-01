@@ -1,6 +1,6 @@
 # In the World
 
-Find me here --> https://www.in-the-world.web.app
+Find me here --> https://in-the-world.web.app
 
 ## Motivation
 
