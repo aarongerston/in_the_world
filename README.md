@@ -1,4 +1,4 @@
-# in_the_world
+# In the World
 
 Have you heard that China is, for the first time in a long time, worried about a declining birth rate? Did you know about the massive uprisings in Belarusia in protest of an authoritarian dictatorship? How about the slaughter of countless civilians in the continuing Nagorno-Karabakh conflict between Azerbaijan and Armenia?
 
